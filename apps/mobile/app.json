@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "맛집",
+    "slug": "matjip",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "matjip",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FDFBF7"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.matjip.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FDFBF7"
+      },
+      "package": "com.matjip.app"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow 맛집 to use your location to find nearby restaurants."
+        }
+      ]
+    ]
+  }
+}

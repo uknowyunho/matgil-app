@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgis/postgis:16-3.4
+    container_name: matjip-postgres
+    restart: unless-stopped
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_DB: matjip
+      POSTGRES_USER: matjip
+      POSTGRES_PASSWORD: matjip_local
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    container_name: matjip-redis
+    restart: unless-stopped
+    ports:
+      - '6379:6379'
+
+volumes:
+  pgdata:
+    driver: local

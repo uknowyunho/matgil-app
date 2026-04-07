@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "react-native",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "baseUrl": ".",
+    "paths": {
+      "@matjip/shared": ["../../packages/shared/src/types/index.ts"],
+      "@matjip/shared/*": ["../../packages/shared/src/*"],
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["App.tsx", "src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules"]
+}

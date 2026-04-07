@@ -1,0 +1,14 @@
+{
+  "name": "@matjip/shared",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/types/index.ts",
+  "types": "src/types/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  }
+}
