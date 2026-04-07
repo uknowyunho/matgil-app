@@ -7,6 +7,7 @@
     "start": "EXPO_NO_METRO_WORKSPACE_ROOT=1 expo start",
     "android": "EXPO_NO_METRO_WORKSPACE_ROOT=1 expo start --android",
     "ios": "EXPO_NO_METRO_WORKSPACE_ROOT=1 expo start --ios",
+    "build": "expo export --platform web",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
