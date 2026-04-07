@@ -1,9 +1,8 @@
 {
   "version": 2,
   "public": true,
-  "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "cleanUrls": true,
+  "framework": null,
   "rewrites": [
     {
       "source": "/(.*)",
