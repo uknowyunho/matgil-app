@@ -1,0 +1,8 @@
+[build]
+builder = "NIXPACKS"
+buildCommand = "npm install --legacy-peer-deps && npm run build"
+
+[deploy]
+startCommand = "npm run start:prod"
+rootDirectory = "apps/api"
+healthCheckPath = "/api/v1/health" # 필요시 실제 헬스체크 경로로 수정하세요
