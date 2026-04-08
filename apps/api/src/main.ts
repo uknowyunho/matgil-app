@@ -13,7 +13,8 @@ async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
 
   const configService = app.get(ConfigService);
-  const port = configService.get<number>('port', 3000);
+  const port = process.env.PORT || configService.get<number>('port') || 3000;
+
 
   // Security (crossOriginResourcePolicy: cross-origin allows static assets to load cross-origin)
   app.use(helmet({ crossOriginResourcePolicy: { policy: 'cross-origin' } }));
