@@ -13,7 +13,8 @@
     "shared:build": "npm run build --workspace=packages/shared",
     "ocr:dev": "npm run dev --workspace=apps/ocr",
     "ocr:build": "npm run build --workspace=apps/ocr",
-    "typecheck": "tsc --noEmit --project tsconfig.base.json"
+    "typecheck": "tsc --noEmit --project tsconfig.base.json",
+    "build": "echo no build needed"
   },
   "engines": {
     "node": ">=20.0.0"
