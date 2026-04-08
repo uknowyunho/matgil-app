@@ -6,7 +6,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "start": "node index.js",
-    "build": "echo no build needed"
+    "build": "nest build"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1004.0",
