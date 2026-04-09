@@ -32,7 +32,7 @@ import { NearbyModule } from './modules/nearby/nearby.module';
         username: configService.get<string>('database.user'),
         password: configService.get<string>('database.password'),
         autoLoadEntities: true,
-        synchronize: false,
+        synchronize: true,
         logging: configService.get<string>('nodeEnv') === 'development',
       }),
     }),
